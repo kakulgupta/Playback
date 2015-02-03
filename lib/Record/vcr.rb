@@ -8,8 +8,8 @@ class Vcr
    @value.each_byte do |byte|
       new_str << byte.chr unless byte.chr == char
     end
-      @play.unshift(@value)
-      @value
+      @play.unshift(new_str)
+      new_str
   end
 
   def length
@@ -21,7 +21,3 @@ class Vcr
     @play
   end
 end
-  t = Vcr.new("hello")
-  t.strip_value(' ')
-  t.length
-  puts t.playback

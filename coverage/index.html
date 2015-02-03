@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-03T07:48:47+05:30">2015-02-03T07:48:47+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-03T09:55:45+05:30">2015-02-03T09:55:45+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.71
+         2.31
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>20</b> relevant lines. 
-    <span class="green"><b>20</b> lines covered</span> and
+    <b>16</b> relevant lines. 
+    <span class="green"><b>16</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#8d421cb9bc5591108c7f532800618e16794068c0" class="src_link" title="lib/Record/vcr.rb">lib/Record/vcr.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>27</td>
-        <td>19</td>
-        <td>19</td>
+        <td>23</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>2.4</td>
       </tr>
       
     </tbody>
@@ -115,8 +115,8 @@
     <h3>lib/Record/vcr.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -136,14 +136,14 @@
           <code class="ruby">  def initialize(value)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="3">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
           
           <code class="ruby">  	@value = value</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
           
           <code class="ruby">  	@play = []</code>
         </li>
@@ -160,20 +160,20 @@
           <code class="ruby">  def strip_value(char)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
           
           <code class="ruby">   new_str = &quot;&quot;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
           <code class="ruby">   @value.each_byte do |byte|</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="9">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="10" data-linenumber="9">
+          <span class="hits">10</span>
           
           <code class="ruby">      new_str &lt;&lt; byte.chr unless byte.chr == char</code>
         </li>
@@ -184,16 +184,16 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="11">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
-          <code class="ruby">      @play.unshift(@value)</code>
+          <code class="ruby">      @play.unshift(new_str)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="12">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
-          <code class="ruby">      @value</code>
+          <code class="ruby">      new_str</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -214,14 +214,14 @@
           <code class="ruby">  def length</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="16">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    @play.unshift(@value.length)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
           
           <code class="ruby">    @value.length</code>
         </li>
@@ -244,8 +244,8 @@
           <code class="ruby">  def playback</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby">    @play</code>
         </li>
@@ -260,30 +260,6 @@
           
           
           <code class="ruby">end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  t = Vcr.new(&quot;hello&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  t.strip_value(&#39; &#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  t.length</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  puts t.playback</code>
         </li>
       
     </ol>
